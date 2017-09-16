@@ -1,0 +1,19 @@
+.row1-ul ul li{
+  font-size: 21px;
+  line-height: 40px;
+}
+.row1-ul ul{
+  margin-top: 10px;
+}
+.row2-canshu,.row3-chuliqi,.row4-wifi,.row5-jiekou{
+  margin:40px 0;
+}
+.row2-canshu li,.row3-chuliqi li,.row4-wifi li,.row5-jiekou li{
+  font-size: 16px;
+  line-height: 40px;
+}
+.rowlast p{
+  font-size: 11px;
+  color: #ccc;
+  margin: 20px 0;
+}

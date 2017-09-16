@@ -1,0 +1,58 @@
+
+.contentbody .col-lg-10 .mydingdan{
+  color: dimgray;
+}
+.contentbody .col-lg-10 .mydingdan p{
+  margin-top: 35px;
+  margin-left: 5px;
+  font-size: 11px;
+}
+.contentbody .col-lg-10 .col-lg-5 ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: dimgray;
+  font-size: 17px;
+}
+.contentbody .col-lg-10 .col-lg-5 ul>li:not(:last-of-type):hover{}
+.contentbody .col-lg-10 .col-lg-5 input{
+  display: block;
+  height: 50px;
+  width:300px;
+  border: 1px solid #eee;
+}
+.input-group-btn{
+  height: 48px;
+  width: 48px;
+  border: 1px solid #eee;
+}
+.btn-default{
+  height: 48px;
+  width: 48px;
+  border: none;
+}
+.input-group{
+  margin-top:-20px;
+}
+.contentbody .col-lg-10 .col-lg-5 input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color:#ccc;
+}
+.contentbody .col-lg-10 .col-lg-5 input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color:#ccc;
+}
+.contentbody .col-lg-10 .col-lg-5 input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color:#ccc;
+}
+.contentbody .col-lg-10 .col-lg-5 input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color:#ccc;
+}
+.carcon{
+  font-size: 19px;
+  color: #ccc;
+  text-align: center;
+  margin-top:50px;
+}

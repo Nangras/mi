@@ -1,0 +1,33 @@
+.tvhead{
+  background-color: white;
+  width:1170px;
+  height:80px;
+}
+.tv li{
+  list-style: none;
+  display:inline;
+  font-size: 16px;
+  margin-right: 23px;
+  line-height: 80px;
+  text-align: center;
+}
+.headimg{
+  width:1170px;
+  margin:20px auto;
+}
+.wrap{
+  width:1170px;
+}
+.wrap img{
+  width:575px;
+}
+.left{
+  margin-top: 20px;
+  float:left;
+  width:570px;
+  margin-right: 25px;
+}
+.right{
+  margin-top: 20px;
+  float:left;
+}

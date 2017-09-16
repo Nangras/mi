@@ -1,0 +1,33 @@
+[
+   {
+    "image":"images/01.png",
+    "name":"小米5",
+    "price":"2400元"
+  },
+  {
+    "image":"images/01.png",
+    "name":"小米4",
+    "price":"2499元"
+  },
+  {
+    "image":"images/01.png",
+    "name":"小米3",
+    "price":"1499元"
+  },
+  {
+    "image":"images/01.png",
+    "name":"小米2",
+    "price":"1200元"
+  },
+  {
+    "image":"images/01.png",
+    "name":"小米2s",
+    "price":"1200元"
+  },
+  {
+    "image":"images/01.png",
+    "name":"小米2A",
+    "price":"1200元"
+  }
+
+]

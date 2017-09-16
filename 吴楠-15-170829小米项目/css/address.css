@@ -1,0 +1,58 @@
+
+
+.addnew{
+  border: 1px solid #ccc;
+  width: 250px;
+  height: 180px;
+  float: left;
+  margin: 20px;
+}
+.addnew:hover{
+  border: 1px solid #999;
+}
+.addnew{
+  padding-top: 50px;
+}
+.addnew>span,p,a{
+  color: #ccc;
+  text-align: center;
+}
+.addnew>p>span:hover{
+  color: #999;
+  text-decoration: none;
+}
+.addnew a:hover{
+  color: #999;
+  text-decoration: none;
+}
+.a{
+  border: 1px solid #ccc;
+  width: 250px;
+  height: 180px;
+  float: left;
+  position: relative;
+  margin: 20px;
+}
+.a .uname{
+  font-size: 17px;
+  font-weight: 200;
+  margin: 20px;
+}
+.a>dd{
+  margin: 5px 15px;
+  font-size: 15px;
+  line-height: 15px;
+}
+.a>.onchange>div{
+  width: 220px;
+  height: 30px;
+  position: absolute;
+  bottom: 15px;
+}
+.a>.onchange>div>button{
+  background-color: transparent;
+}
+.a>.onchange>div>button:nth-of-type(2){
+  position: absolute;
+  right: 0;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    list-style: none;
+  }
+#list{
+  width: 240px;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 0;
+
+  }
+.li ul{
+  display: none;
+}
+#list>li>h2{
+  display: block;
+  background: burlywood;
+  margin: 0;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  width: 240px;
+}
+.li>ul>li{
+  border-bottom: 1px solid black;
+  width: 240px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  /*margin-left: -40px;*/
+}
+  .active{
+    background: red !important;
+  }
+  .hover{
+    background: deepskyblue;
+  }
+</style>
+<body>
+<ul id="list">
+  <li class="li">
+    <h2>我的好友</h2>
+    <ul>
+      <li>小李</li>
+      <li>小李</li>
+      <li>小李</li>
+      <li>小李</li>
+    </ul>
+  </li>
+  <li class="li">
+    <h2>我的损友</h2>
+    <ul>
+      <li>小李</li>
+      <li>小李</li>
+      <li>小李</li>
+      <li>小李</li>
+    </ul>
+  </li>
+  <li class="li">
+    <h2>黑名单</h2>
+    <ul>
+      <li>小李</li>
+      <li>小李</li>
+      <li>小李</li>
+      <li>小李</li>
+    </ul>
+  </li>
+
+</ul>
+<script>
+  var olist=document.getElementById('list');
+   var oh2=olist.getElementsByTagName('h2');
+  var oul=olist.getElementsByTagName('ul');
+  var ali=null;
+  var arrli=[];
+  var onoff=true;
+      for(var i=0;i<oh2.length;i++) {
+        oh2[i].index=i;
+        oh2[i].onclick=function () {
+          for( var i=0;i<oh2.length;i++){
+            oul[i].style.display="none";
+          }
+          if(this.className==''){
+            for(var j=0;j<oh2.length;j++){
+              oh2[j].className="";
+            }
+            this.className='active';
+            oul[this.index].style.display='block';
+          }
+          else{
+            this.className="";
+            oul[this.index].style.display='none';
+          }
+        }
+      }
+  for(var i=0;i<oul.length;i++) {
+    ali = oul[i].getElementsByTagName('li');
+    for (var j = 0; j < ali.length; j++) {
+      arrli.push(ali[j]);
+    }
+  }
+  for (var i = 0; i < arrli.length; i++) {
+    arrli[i].index=true;
+    arrli[i].onclick = function () {
+      for (var i = 0; i < arrli.length; i++) {
+        arrli[i].className = "";
+      }
+      if (this.index) {
+        for(var j=0;j<arrli.length;j++){
+          arrli[j].index=true;
+        }
+        this.className = 'hover';
+      } else {
+        this.className = "";
+      }
+       this.index=!this.index;
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="js/dfrz-store.js"></script>
+  <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="jquery-1.11.1.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <header class="container">
+    <img src="images/06.png" class="pull-left">
+    <div class="pull-left">
+      <h2>小米商城</h2>
+      <p>让每个人都能享受科技的乐趣</p>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-offset-7 col-lg-4">
+      <!-- nav 清除li的默认样式 -->
+      <!-- nav-tabs 定义选项卡的标题栏 -->
+      <!-- tab-content 定义了选项卡的内容栏 -->
+      <!-- 在内容栏中，每个子框都必须包含tab-pane类 -->
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab">账号登录</a></li>
+        <li><a href="#tab2" data-toggle="tab">扫码登录</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="active tab-pane" id="tab1">
+          <input type="text" placeholder="邮箱/手机号码/小米账号" id="loginname">
+          <input type="text" placeholder="密码" id="password">
+          <button onclick="login()">立即登录</button>
+          <ul>
+            <li class="pull-left"><a href="#" class="lang-select-li current">注册小米账号</a>&nbsp;&nbsp;|</li>
+            <li class="pull-left"><a href="#" class="lang-select-li">&nbsp;&nbsp;忘记密码？</a></li>
+          </ul>
+          <div class="other">
+            <p>其它方式登录</p>
+            <p>
+              <img src="images/qq.png" alt="">
+              <img src="images/微信.png" alt="">
+              <img src="images/支付宝.png" alt="">
+              <img src="images/微博.png" alt="">
+            </p>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab2">
+          <img src="images/saoma.png">
+          <p>使用<span>小米商城APP</span>扫一扫</p>
+          <p>请打开「设置 > 小米帐号 > 右上角扫一扫」扫码登录</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<footer>
+    <div class="clearfix">
+      <ul>
+        <li class="pull-left"><a href="#" data-lang="zh_CN" class="lang-select-li current">简体</a>|</li>
+        <li class="pull-left"><a href="#" data-lang="zh_TW" class="lang-select-li">繁体</a>|</li>
+        <li class="pull-left"><a href="#" data-lang="en" class="lang-select-li">English</a>|</li>
+        <li class="pull-left"><a href="#" target="_blank">常见问题</a></li>
+      </ul>
+    </div>
+    <p class="nf-intro">
+      <span>小米公司版权所有-京ICP备10046444-
+        <a class="beian-record-link" target="_blank" href="#">
+          <span><img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png">
+          </span>京公网安备11010802020134号
+        </a>
+        -京ICP证110507号
+      </span>
+    </p>
+</footer>
+  <script>
+    var userkeyvalue = store.get('userkey');
+    var passkeyvalue = store.get('passkey');
+    userkeyvalue=userkeyvalue.replace(/^"|"$/g,"");
+    passkeyvalue=passkeyvalue.replace(/^"|"$/g,"");
+    console.log(userkeyvalue);
+    console.log(passkeyvalue);
+    function login() {
+      if($("#loginname").val() == userkeyvalue && $("#password").val() == passkeyvalue){
+        alert("登陆成功！");
+        store.add("isLogin",true);
+        window.location.replace('homepage-notlogin.html');
+        return true;
+      }
+      else{
+        alert("账号或密码错误！请重新输入！");
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>

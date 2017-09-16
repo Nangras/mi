@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="jquery-1.11.1.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/buycar.css">
+  <script src="js/czb-tools.js"></script>
+  <script src="js/cart.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row row-biaoti">
+      <div class="col-lg-1"><img src="images/06.png" alt=""></div>
+      <div class="col-lg-5">
+        <h2 class="pull-left">我的购物车</h2>
+        <p class="pull-left wenxintips">温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+      </div>
+      <div class="col-lg-offset-4 col-lg-2">
+        <ul class="nav">
+          <li class="pull-left" id="menuli">永久居留<span class="glyphicon glyphicon-chevron-down"></span>
+            <ul class="menu">
+              <li><a href="ownspace.html">个人中心</a></li>
+              <li><a href="showdan.html">评价晒单</a></li>
+              <li><a href="#">我的喜欢</a></li>
+              <li><a href="safe.html">小米账户</a></li>
+              <li><a href="login.html">退出登录</a></li>
+            </ul></li>
+          <li>|</li>
+          <li class="pull-left">我的订单</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <table id="cart">
+        <thead>
+      <tr>
+        <th><label for="all"><input id="all" type="checkbox" >全选</label></th>
+        <th>图片</th>
+        <th class="sort" data-sort="fullName">商品名称</th>
+        <th class="sort" data-sort="spec">规格</th>
+        <th class="sort" data-sort="price">单价</th>
+        <th class="sort" data-sort="quantity">数量</th>
+        <th class="sort" data-sort="">小计</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+          <tr>
+        <td><label for=""><input type="checkbox" id="allcheck">全选</label></td>
+        <td><a href="#">删除选中的商品</a></td>
+        <td></td>
+        <td></td>
+        <td>合计：</td>
+        <td class="text-right"></td>
+        <td class="text-right"></td>
+        <td><button type="button">结算</button></td>
+      </tr>
+        </tfoot>
+    </table>
+      </div>
+
+  </div>
+  <!--footer-->
+  <div class="container-fluid">
+    <div class="site-footer">
+      <div class="container">
+        <div class="footer-service">
+          <ul class="list-service clearfix">
+            <li class="pull-left"><a rel="nofollow" href="//www.mi.com/static/fast/" target="_blank" data-stat-id="46873828b7b782f4"><span class="glyphicon glyphicon-repeat"></span>预约维修服务</a></li>
+            <li class="pull-left">|</li>
+            <li class="pull-left"><a rel="nofollow" href="//www.mi.com/service/exchange#back" target="_blank" data-stat-id="78babcae8a619e26" ><span class="glyphicon glyphicon-repeat"></span>7天无理由退货</a></li>
+            <li class="pull-left">|</li>
+            <li class="pull-left"><a rel="nofollow" href="//www.mi.com/service/exchange#back" target="_blank" data-stat-id="c32aa0e33f91888c"><span class="glyphicon glyphicon-repeat"></span>15天免费换货</a></li>
+            <li class="pull-left">|</li>
+            <li class="pull-left"><a rel="nofollow" href="//www.mi.com/service/buy/postage/" target="_blank" data-stat-id="57f30b1927fe876a"><span class="glyphicon glyphicon-repeat"></span>满150元包邮</a></li>
+            <li class="pull-left">|</li>
+            <li class="pull-left"><a rel="nofollow" href="//www.mi.com/static/maintainlocation/" target="_blank" data-stat-id="b57397dd7ad77a31"><span class="glyphicon glyphicon-repeat"></span>520余家售后网点</a></li>
+          </ul>
+        </div>
+        <div class="page-header"></div>
+        <div class="footer-links clearfix">
+          <dl class="col-links col-links-first pull-left">
+            <dt>帮助中心</dt>
+            <dd><a rel="nofollow" href="//www.mi.com/service/account/register/" target="_blank" data-stat-id="e5dad0738a41014f">账户管理</a></dd>
+            <dd><a rel="nofollow" href="//www.mi.com/service/buy/buytime/" target="_blank" data-stat-id="8e128f473e680197">购物指南</a></dd>
+            <dd><a rel="nofollow" href="//www.mi.com/service/order/sendprogress/" target="_blank" data-stat-id="fd9e3532f60a2f8d">订单操作</a></dd>
+          </dl>
+          <dl class="col-links  pull-left">
+            <dt>服务支持</dt>
+            <dd><a rel="nofollow" href="//www.mi.com/service/exchange" target="_blank" data-stat-id="8e282b6f669ba990">售后政策</a></dd>
+            <dd><a rel="nofollow" href="http://fuwu.mi.com/" target="_blank" data-stat-id="5f2408ab3c808aa2">自助服务</a></dd>
+            <dd><a rel="nofollow" href="http://xiazai.mi.com/" target="_blank" data-stat-id="18c340c920a278a1">相关下载</a></dd>
+          </dl>
+          <dl class="col-links  pull-left">
+            <dt>线下门店</dt>
+            <dd><a rel="nofollow" href="//www.mi.com/c/xiaomizhijia/" target="_blank" data-stat-id="b27b566974e4aa67">小米之家</a></dd>
+            <dd><a rel="nofollow" href="//www.mi.com/static/maintainlocation/" target="_blank" data-stat-id="6dab396f7a873f15">服务网点</a></dd>
+            <dd><a rel="nofollow" href="//www.mi.com/static/familyLocation/" target="_blank" data-stat-id="9af5efe014c3aea2">零售网点</a></dd>
+          </dl>
+          <dl class="col-links  pull-left">
+            <dt>关于小米</dt>
+            <dd><a rel="nofollow" href="//www.mi.com/about/" target="_blank" data-stat-id="c61e1993a79fe40f">了解小米</a></dd>
+            <dd><a rel="nofollow" href="http://hr.xiaomi.com/" target="_blank" data-stat-id="4307a445f5592adb">加入小米</a></dd>
+            <dd><a rel="nofollow" href="//www.mi.com/about/contact/" target="_blank" data-stat-id="c131230013422488">联系我们</a></dd>
+          </dl>
+          <dl class="col-links  pull-left">
+            <dt>关注我们</dt>
+            <dd><a rel="nofollow" href="http://weibo.com/xiaomishangcheng" target="_blank" data-stat-id="4d561ee685cd2e15">新浪微博</a></dd>
+            <dd><a rel="nofollow" href="http://xiaoqu.qq.com/mobile/share/index.html" target="_blank" data-stat-id="78fdefa9dee561b5">小米部落</a></dd>
+            <dd><a rel="nofollow" href="#" data-toggle="modal" data-stat-id="47539f6570f0da90">官方微信</a></dd>
+          </dl>
+          <dl class="col-links  pull-left">
+            <dt>特色服务</dt>
+            <dd><a rel="nofollow" href="//order.mi.com/queue/f2code" target="_blank" data-stat-id="fdc16dd51892a164">F 码通道</a></dd>
+            <dd><a rel="nofollow" href="//www.mi.com/giftcode/" target="_blank" data-stat-id="835607e3820935bb">礼物码</a></dd>
+            <dd><a rel="nofollow" href="//order.mi.com/misc/checkitem" target="_blank" data-stat-id="b08be6bd51351e1a">防伪查询</a></dd>
+          </dl>
+          <div class="col-contact text-center">
+            <h3 class="phone">400-100-5678</h3>
+            <p>
+              周一至周日 8:00-18:00<br>（仅收市话费）
+            </p>
+            <a rel="nofollow" class="btn btn-line-primary btn-small" href="//www.mi.com/service/contact/" target="_blank" data-stat-id="5b2a716d6de71f78"><i class="iconfont"></i> 24小时在线客服</a>            </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-info">
+      <div class="container  fluidfoot">
+        <div class="logo ir pull-left"><img src="images/06.png" alt=""></div>
+        <div class="info-text pull-left">
+          <p class="sites"><a rel="nofollow" href="//www.mi.com/index.html" target="_blank" data-stat-id="b9017a4e9e9eefe3">小米商城</a><span class="sep">|</span><a rel="nofollow" href="http://www.miui.com/" target="_blank" data-stat-id="ed2a0e25c8b0ca2f" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-ed2a0e25c8b0ca2f', 'http://www.miui.com/', 'pcpid', '']);">MIUI</a><span class="sep">|</span><a rel="nofollow" href="http://www.miliao.com/" target="_blank" data-stat-id="826b32c1478a98d5" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-826b32c1478a98d5', 'http://www.miliao.com/', 'pcpid', '']);">米聊</a><span class="sep">|</span><a rel="nofollow" href="http://www.duokan.com/" target="_blank" data-stat-id="c9d2af1ad828a834" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-c9d2af1ad828a834', 'http://www.duokan.com/', 'pcpid', '']);">多看书城</a><span class="sep">|</span><a rel="nofollow" href="http://www.miwifi.com/" target="_blank" data-stat-id="96f1a8cecc909af2" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-96f1a8cecc909af2', 'http://www.miwifi.com/', 'pcpid', '']);">小米路由器</a><span class="sep">|</span><a rel="nofollow" href="http://call.mi.com/" target="_blank" data-stat-id="347f6dd0d8d9fda3" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-347f6dd0d8d9fda3', 'http://call.mi.com/', 'pcpid', '']);">视频电话</a><span class="sep">|</span><a rel="nofollow" href="http://xiaomi.tmall.com/" target="_blank" data-stat-id="dfe0fac59cfb15d9" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-dfe0fac59cfb15d9', 'http://xiaomi.tmall.com/', 'pcpid', '']);">小米天猫店</a><span class="sep">|</span><a rel="nofollow" href="http://shop115048570.taobao.com" target="_blank" data-stat-id="c2613d0d3b77ddff" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-c2613d0d3b77ddff', 'http://shop115048570.taobao.com', 'pcpid', '']);">小米淘宝直营店</a><span class="sep">|</span><a rel="nofollow" href="http://union.mi.com/" target="_blank" data-stat-id="2f48f953961c637d" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-2f48f953961c637d', 'http://union.mi.com/', 'pcpid', '']);">小米网盟</a><span class="sep">|</span><a rel="nofollow" href="//www.mi.com/mimobile/" target="_blank" data-stat-id="f7ea7880c49b687e" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-f7ea7880c49b687e', '//www.mi.com/mimobile/', 'pcpid', '']);">小米移动</a><span class="sep">|</span><a rel="nofollow" href="http://www.miui.com/res/doc/privacy/cn.html" target="_blank" data-stat-id="c7ef95929d60f3f1" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-c7ef95929d60f3f1', 'http://www.miui.com/res/doc/privacy/cn.html', 'pcpid', '']);">隐私政策</a><span class="sep">|</span><a rel="nofollow" href="#J_modal-globalSites" data-toggle="modal" data-stat-id="9db137a8e0d5b3dd" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-9db137a8e0d5b3dd', '#J_modal-globalSites', 'pcpid', '']);">Select Region</a>            </p>
+          <p>©<a href="//www.mi.com/" target="_blank" title="mi.com" data-stat-id="836cacd9ca5b75dd" >mi.com</a> 京ICP证110507号 <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow" data-stat-id="f96685804376361a" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-f96685804376361a', 'http://www.miitbeian.gov.cn/', 'pcpid', '']);">京ICP备10046444号</a> <a rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134" target="_blank" data-stat-id="57efc92272d4336b" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-57efc92272d4336b', 'http://www.beian.gov.cn/portal/registerSystemInforecordcode=11010802020134', 'pcpid', '']);">京公网安备11010802020134号 </a><a rel="nofollow" href="//c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg" target="_blank" data-stat-id="c5f81675b79eb130" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-c5f81675b79eb130', '//c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg', 'pcpid', '']);">京网文[2014]0059-0009号</a>
+            <br> 违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+        </div>
+        <div class="info-links">
+          <a rel="nofollow" href="//privacy.truste.com/" target="_blank" data-stat-id="de920be99941f792"><img rel="nofollow" src="//i1.mifile.cn/f/i/17/site/truste.png" alt="TRUSTe Privacy Certification"></a>
+          <a rel="nofollow" href="//search.szfw.org/cert/l/CX20120926001783002010" target="_blank" data-stat-id="d44905018f8d7096"><img rel="nofollow" src="//s01.mifile.cn/i/v-logo-2.png" alt="诚信网站"></a>
+          <a rel="nofollow" href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082" target="_blank" data-stat-id="3e1533699f264eac"><img rel="nofollow" src="//s01.mifile.cn/i/v-logo-1.png" alt="可信网站"></a>
+          <a rel="nofollow" href="http://www.315online.com.cn/member/315140007.html" target="_blank" data-stat-id="b085e50c7ec83104"><img rel="nofollow" src="//s01.mifile.cn/i/v-logo-3.png" alt="网上交易保障中心"></a>
+        </div>
+      </div>
+      <div class="slogan ir">探索黑科技，小米为发烧而生</div>
+    </div>
+  </div>
+  <script type="text/template" id="tr-template">
+    <tr data-pid="{6}">
+      <td><label for=""><input name="productID" type="checkbox"></label></td>
+      <td><img src="{0}" alt=""></td>
+      <td>{1}</td>
+      <td>{2}</td>
+      <td class="text-right">{3}</td>
+      <td><button type="button">-</button><input class="text-right" type="text" value="{4}"><button type="button">+</button></td>
+      <td class="text-right">{5}</td>
+      <td>
+        <a href="#" >删除</a>
+      </td>
+    </tr>
+  </script>
+  <script>
+    $(function(){
+      $("#menuli").hover(function(){
+        $(this).css("color","rgb(245,102,0)").children("ul").slideDown();
+      },function(){
+        $(this).css("color","black").children("ul").slideUp();
+      });
+      $("#menu li a").hover(function(){
+        $(this).css("color","rgb(245,102,0)");
+      },function(){
+        $(this).css("background-color","#eee");
+      });
+    });
+  </script>
+</body>
+</html>

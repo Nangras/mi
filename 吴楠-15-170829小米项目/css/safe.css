@@ -1,0 +1,156 @@
+.container {
+  background-color: #fff;
+}
+.pagehead{
+ margin-bottom: 60px;
+}
+.pagehead img{
+  padding-top: 60px;
+}
+.pagehead p{
+  margin-top: 60px;
+
+}
+.pagehead p>a{
+  color: #999;
+}
+.pagehead p>a:hover{
+  text-decoration: none;
+  color: rgb(245,102,0);
+}
+/*标签头*/
+#myTab li{
+  margin-right:60px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.nav-pills a{
+  color: black;
+}
+.nav-pills a:hover{
+  color: rgb(245,102,0);
+  background-color: transparent;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: rgb(245,102,0);
+  background-color: transparent;
+}
+.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+  color: rgb(245,102,0);
+  background-color: transparent;
+  border: none;
+}
+/*标签页1*/
+#myTabContent{
+  margin-top: 60px;
+}
+.row-tab1 h4{
+  font-weight: bold;
+}
+.row-tab1>p{
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: 5px;
+  color: #999;
+}
+.row-tab1>p:nth-of-type(2){
+  margin-left: 10px;
+  margin-top: 15px;
+}
+#safe .progress{
+  height: 5px;
+  width: 400px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.row-tab1{
+  height: 50px;
+}
+#safe .page-header {
+  margin: 0;
+}
+#safe .col-lg-12{
+  margin-top: 20px;
+}
+#safe .col-lg-12 .col-lg-11>p{
+  float: left;
+  margin-right: 20px;
+}
+#safe .col-lg-12 .col-lg-11>p:nth-of-type(1)>span{
+  color: rgb(245,102,0);
+  font-size: 20px;
+}
+#safe .col-lg-12 .col-lg-11>p:nth-of-type(2)>span:nth-of-type(1){
+  font-weight: bold;
+  font-size: 16px;
+}
+#safe .col-lg-12 .col-lg-11>p:nth-of-type(2)>span:nth-of-type(2){
+  font-weight: bold;
+  font-size: 14px;
+  color: #999;
+}
+#safe .col-lg-12 .col-lg-1 button{
+  display: block;
+  width: 100px;
+}
+.row-01 p{
+  margin-top: 20px;
+}
+.biaoqian{
+  position: relative;
+}
+#qquan{
+  width:90px;
+  height: 90px;
+  border-radius:100px;
+  background: grey;
+  position: absolute;
+  left: 900px;
+  top: 0;
+}
+.editinfo p{
+  border-bottom: 1px solid lightgray;
+
+}
+.editinfo h3{
+  margin-top: 50px;
+}
+.editinfo p{
+  font-size: 16px;
+}
+
+/*footer*/
+footer{
+  margin-top: 50px;
+  font-size: 12px;
+}
+footer ul{
+  width: 30%;
+  margin: 0 auto;
+}
+footer li{
+  list-style: none;
+  color: #666;
+}
+footer li>a{
+  text-decoration: none;
+  color: #666;
+  margin: 20px;
+}
+footer .nf-intro{
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  color: #666;
+}
+footer .nf-intro a{
+  text-decoration: none;
+  color: #666;
+}
+footer>div a:hover{
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,25 @@
+.carcon{
+  font-size: 19px;
+  color: #ccc;
+  text-align: center;
+  margin-top:50px;
+}
+.mydingdan{
+  color: gray;
+}
+.contentbody .col-lg-2{
+  padding-top: 30px;
+}
+.contentbody .col-lg-10{
+  padding-left: 30px;
+}
+.contentbody .col-lg-10 ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  color: gray;
+}
+.contentbody .page-header{
+  margin-top: 0;
+}
